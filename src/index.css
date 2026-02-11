@@ -1,0 +1,76 @@
+:root {
+  background-color: #fff0f3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  color: #ff4d6d;
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px #ffccd5;
+}
+
+.yes-button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+  transition: transform 0.2s;
+}
+
+.no-button {
+  background-color: #590d22;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.celebration-image {
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ff4d6d;
+}
+
+.button-group {
+  display: flex;
+  gap: 30px; /* Space between Yes and No */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 100px; /* Gives the buttons room to breathe */
+}
+
+.yes-button, .no-button {
+  transition: transform 0.2s ease, top 0.2s ease, left 0.2s ease;
+  min-width: 120px;
+}
+
+/* Add a little wiggle to the Yes button to make it look inviting */
+.yes-button:hover {
+  transform: scale(1.1) !important;
+  background-color: #ff758f;
+}
